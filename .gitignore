@@ -1,5 +1,5 @@
-   .pio/
-   __pycache__/
-   *.pyc
-   .venv/
-   data/raw/
+.pio/
+__pycache__/
+*.pyc
+.venv/
+data/raw/
