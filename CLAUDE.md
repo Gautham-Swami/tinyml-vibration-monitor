@@ -17,6 +17,18 @@ Early stage. The only verified result so far: the MPU-6050 responds over I2C at 
 
 Update this file with real commands and architecture once firmware or training code lands.
 
+## Commands (firmware)
+
+   `pio` is not on Git Bash's PATH; use `~/.platformio/penv/Scripts/pio.exe` (or an alias).
+
+   - Build: `pio run -d firmware`
+   - Flash: `pio run -d firmware -t upload` (hold BOOT if it can't connect)
+   - Monitor: `pio device monitor -d firmware --echo` (115200 baud)
+
+   ## Known issues
+
+   - MPU-6050 z-axis reads about +0.31 g high (offset, gain ≈ 1.02). Calibration not yet implemented.
+
 ## Hardware
 
 - Board: ESP32 dev board
