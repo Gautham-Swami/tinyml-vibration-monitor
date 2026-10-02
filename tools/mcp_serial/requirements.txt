@@ -1,0 +1,7 @@
+# Pinned to the major versions verified to install on Python 3.14.
+# mcp 2.x renamed FastMCP to MCPServer; server.py uses the 2.x API.
+mcp>=2.2,<3
+pyserial>=3.5,<4
+
+# Tests
+pytest>=9.1,<10
