@@ -8,7 +8,7 @@ with '#' are comments; data lines are t_ms,ax,ay,az.
 import re
 
 MIN_RATE_HZ = 10
-MAX_RATE_HZ = 300
+MAX_RATE_HZ = 200
 MAX_COMMAND_LEN = 32  # firmware LineBuffer::kCapacity
 
 # Printed once by the firmware at boot; seeing it means the board reset.
